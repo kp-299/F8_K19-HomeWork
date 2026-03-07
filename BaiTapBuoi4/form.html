@@ -8,7 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://api-gateway.f8.edu.vn/action_page.php" method="post" enctype="multipart/form-data">
+    <form action="https://api-gateway.f8.edu.vn/action_page.php"
+          method="post"
+          enctype="multipart/form-data">
+        <fieldset>
+        <!--Nhóm 1 – Thông tin cơ bản-->
+            <legend>Thông tin cơ bản</legend>
+            <div>
+                <label for="fullname">Họ và tên:</label>
+                <input type="text"
+                       name="fullname"
+                       id="fullname"
+                       placeholder="Nguyễn Văn A"
+                       autofocus
+                       required
+                       tabindex="1">
+            </div>
+            <div>                                                                                              
+                <label for="email">Email:</label>
+                <input type="email"
+                       name="email"
+                       id="email"
+                       placeholder="example@gmail.com"
+                       required
+                       tabindex="2">
+            </div>
+
 
     </form>
 
