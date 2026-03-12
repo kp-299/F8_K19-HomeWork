@@ -1,0 +1,32 @@
+h1 {
+    color: Crimson;
+}
+h2 {
+    color: RoyalBlue;
+}
+h3 {
+    color: ForestGreen;
+}
+p {
+    color: DarkOrange;
+}
+
+.title {
+    color: BlueViolet;
+}
+.section {
+    color: SaddleBrown;
+}
+.highlight {
+    color: DeepPink;
+}
+.big {
+    color: SlateGray;
+}
+
+#main {
+    color: MidnightBlue;
+}
+#special {
+    color: DarkRed;
+}

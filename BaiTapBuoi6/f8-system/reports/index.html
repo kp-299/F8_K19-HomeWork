@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REPORT PAGE</title>
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/theme.css" />
+    </head>
+    <body>
+        <h1>REPORT PAGE</h1>
+        <h2 class="title">Thong ke he thong</h2>
+        <!-- h2 class .title dù là thẻ h2 nhưng vì có class .title nên nó
+         sẽ không lấy màu của h2 trong base.css. Thay vào đó, nó lấy màu của
+         .title trong theme.css (màu Aqua). -->
+        <div class="section" id="main">
+            <!-- section và #main Vì ID mạnh hơn Class, nên toàn bộ chữ bên
+             trong khối div này nếu các thẻ con không có style riêng sẽ cố
+             gắng thừa hưởng màu từ #main (MidnightBlue)-->
+            <p class="title">Tong so hoc vien</p>
+
+            <p class="big">Tong so khoa hoc</p>
+
+            <p class="section">Tong so don hang</p>
+
+            <p class="highlight">Doanh thu</p>
+
+            <!-- sự kết hợp giữa thẻ p và class .title
+             class mạnh hơn Thẻ, nên nó sẽ hiển thị màu của class thay vì màu của thẻ -->
+        </div>
+    </body>
+</html>
