@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                padding: 50px;
+            }
+
+            .open-btn {
+                background-color: #3b82f6;
+                color: #ffffff;
+                padding: 12px 24px;
+            }
+
+            .close-btn {
+                width: 40px;
+                height: 10px;
+                margin-left: 60px;
+                background-color: #ef4444;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px 20px;
+            }
+            p {
+                text-align: center;
+            }
+
+            .overlay {
+                display: none;
+                height: 100vh;
+                padding-top: 50vh;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .modal {
+                margin: 100px auto;
+                width: 300px;
+                height: 200px;
+                background-color: #ffffff;
+                color: #333333;
+            }
+
+            #modal-toggle:checked ~ .overlay {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Dùng check box để ẩn  -->
+        <input type="checkbox" id="modal-toggle" hidden />
+        <label for="modal-toggle" class="open-btn"> Mở modal </label>
+        <label for="modal-toggle" class="overlay">
+            <div class="modal">
+                <p>Đây là nội dung thông báo!</p>
+                <label for="modal-toggle" class="close-btn"> Đóng </label>
+            </div>
+        </label>
+    </body>
+</html>

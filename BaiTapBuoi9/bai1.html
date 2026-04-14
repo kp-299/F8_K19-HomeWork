@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .item {
+                display: inline-block;
+                margin: 20px;
+            }
+            /* 1. Hình vuông */
+            .square {
+                height: 100px;
+                width: 100px;
+                border: 3px solid #ca6150;
+            }
+            /* 2. Hình chữ nhật */
+            .rectangle {
+                height: 80px;
+                width: 150px;
+                border: 3px solid #6193cc;
+            }
+            /* 3. Hình tam giác lên  */
+            .triangular {
+                width: 0;
+                height: 0;
+                border-left: 45px solid transparent;
+                border-right: 45px solid transparent;
+                border-bottom: 100px solid #6dc878;
+            }
+            /* 4. Hình tam giác xuống */
+            .down-triangle {
+                width: 0;
+                height: 0;
+                border-top: 100px solid #e39f30;
+                border-left: 45px solid transparent;
+                border-right: 45px solid transparent;
+            }
+            /* 5. Tam giác trái */
+            .left-triangle {
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-right: 100px solid #905cb1;
+                border-bottom: 50px solid transparent;
+            }
+            /* 6 .Tam giác phải  */
+            .right-triangle {
+                width: 0;
+                height: 0;
+                border-left: 100px solid #d38231;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+            }
+            /* 7. Hình Thang */
+            .trapezoid {
+                width: 100px;
+                height: 0;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-bottom: 100px solid #60b99d;
+            }
+            /* 8. Hình tam giác rộng  */
+            .wide-triangle {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 80px solid #3a485d;
+            }
+            /* 9. Tam giác nhọn  */
+            .pointed-triangle {
+                width: 0;
+                height: 0;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 100px solid #ad442f;
+            }
+            /* 10. Tam giác cân  */
+            .isosceles-triangle {
+                width: 0;
+                height: 0;
+                border-left: 60px solid transparent;
+                border-right: 60px solid transparent;
+                border-bottom: 60px solid #bf5c19;
+            }
+            /* 11. Mũi tên phải */
+            .right-arrow {
+                height: 0px;
+                width: 0px;
+                border-top: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 70px solid #539e87;
+            }
+            /* 12. Mũi tên trái*/
+            .left-arrow {
+                height: 0px;
+                width: 0px;
+                border-top: 50px solid transparent;
+                border-right: 70px solid #8348ab;
+                border-bottom: 50px solid transparent;
+                border-left: 50px solid transparent;
+            }
+            /* 13. Ribbon/lá cờ*/
+            .ribbon-flag {
+                height: 0px;
+                width: 0px;
+                border-top: 50px solid #d15941;
+                border-right: 50px solid transparent;
+                border-bottom: 50px solid #d15941;
+                border-left: 100px solid #d15941;
+            }
+
+            /* 14. F8 */
+            .letter-f {
+                display: inline-block;
+            }
+
+            .letter-f01 {
+                width: 40px;
+                height: 40px;
+                border-top: 40px solid #d15941;
+                border-left: 40px solid #d15941;
+                border-bottom: 40px solid #d15941;
+                border-right: 0px solid transparent;
+                padding-right: 40px;
+            }
+
+            .letter-f02 {
+                margin-top: -10px;
+                width: 40px;
+                height: 90px;
+                border-left: 40px solid #d15941;
+            }
+
+            .number-8 {
+                display: inline-block;
+            }
+
+            .top-box {
+                width: 40px;
+                height: 40px;
+                margin-left: 5px;
+                padding-right: 40px;
+                border-top: 40px solid #d15941;
+                border-left: 40px solid #d15941;
+                border-bottom: 20px solid #d15941;
+                border-right: 40px solid #d15941;
+            }
+
+            .bottom-box {
+                width: 40px;
+                height: 40px;
+                margin-left: 5px;
+                padding-right: 40px;
+                border-top: 20px solid #d15941;
+                border-left: 40px solid #d15941;
+                border-bottom: 40px solid #d15941;
+                border-right: 40px solid #d15941;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Các hình có thể tạo được với Border</h1>
+        <!-- 1. Hình vuông -->
+        <div class="item">
+            <div class="square"></div>
+            <p>1. Hình vuông</p>
+        </div>
+        <!-- 2. Hình chữ nhật -->
+        <div class="item">
+            <div class="rectangle"></div>
+            <p>2. Hình chữ nhật</p>
+        </div>
+        <!-- 3. Hình tam giác lên -->
+        <div class="item">
+            <div class="triangular"></div>
+            <p>3. Hình tam giác lên</p>
+        </div>
+        <!-- 4. Tam giác xuống -->
+        <div class="item">
+            <div class="down-triangle"></div>
+            <p>4. Tam giác xuống</p>
+        </div>
+        <!-- 5. Tam giác trái  -->
+        <div class="item">
+            <div class="left-triangle"></div>
+            <p>5. Tam giác trái</p>
+        </div>
+        <!-- 6. Tam giác phải   -->
+        <div class="item">
+            <div class="right-triangle"></div>
+            <p>6. Tam giác phải</p>
+        </div>
+        <!-- 7. Hình Thang   -->
+        <div class="item">
+            <div class="trapezoid"></div>
+            <p>7. Hình Thang</p>
+        </div>
+        <!-- 8. Tam giác rộng   -->
+        <div class="item">
+            <div class="wide-triangle"></div>
+            <p>8. Tam giác rộng</p>
+        </div>
+        <!-- 9. Tam giác nhọn   -->
+        <div class="item">
+            <div class="pointed-triangle"></div>
+            <p>9. Tam giác nhọn</p>
+        </div>
+        <!-- 10. Tam giác cân  -->
+        <div class="item">
+            <div class="isosceles-triangle"></div>
+            <p>10. Tam giác cân</p>
+        </div>
+        <!-- 11. Mũi tên phải    -->
+        <div class="item">
+            <div class="right-arrow"></div>
+            <p>11. Mũi tên phải</p>
+        </div>
+        <!-- 12. Mũi tên trái  -->
+        <div class="item">
+            <div class="left-arrow"></div>
+            <p>12. mũi tên trái</p>
+        </div>
+        <!-- 13.  Ribbon/lá cờ   -->
+        <div class="item">
+            <div class="ribbon-flag"></div>
+            <p>13. Ribbon/lá cờ</p>
+        </div>
+        <!-- 14.  F8   -->
+        <div class="item">
+            <div class="letter-f">
+                <div class="letter-f01"></div>
+                <div class="letter-f02"></div>
+            </div>
+            <div class="number-8">
+                <div class="top-box"></div>
+                <div class="bottom-box"></div>
+            </div>
+            <p>14. F8</p>
+        </div>
+    </body>
+</html>
